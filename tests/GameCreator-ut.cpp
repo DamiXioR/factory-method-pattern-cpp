@@ -2,5 +2,4 @@
 #include "GameCreator.hpp"
 
 class GameCreatorTest : public ::testing::Test {
-    
 };

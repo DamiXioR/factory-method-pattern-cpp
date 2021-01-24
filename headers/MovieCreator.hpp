@@ -4,7 +4,7 @@
 
 #include <string>
 
-class MovieCreator: public IProductCreator {
+class MovieCreator : public IProductCreator {
 public:
     IProduct* createProduct(std::string productTitle);
 };

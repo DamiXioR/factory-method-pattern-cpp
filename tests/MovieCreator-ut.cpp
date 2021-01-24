@@ -2,5 +2,4 @@
 #include "MovieCreator.hpp"
 
 class MovieCreatorTest : public ::testing::Test {
-    
 };

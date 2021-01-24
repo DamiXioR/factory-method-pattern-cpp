@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "GameCreator.hpp"
 #include "Game.hpp"
+#include "GameCreator.hpp"
 
 class GameTest : public ::testing::Test {
 public:
@@ -8,9 +8,9 @@ public:
     const std::string uoGame = "Ultima Online _game";
 };
 
-TEST_F(GameTest, ShouldCreateGameClassObjectWithNameFollowedByPostfix){
+TEST_F(GameTest, ShouldCreateGameClassObjectWithNameFollowedByPostfix)
+{
     Game* ultimaOnline = new Game(uoTitle);
     EXPECT_EQ(ultimaOnline->getTitle(), uoGame);
     delete ultimaOnline;
 }
-

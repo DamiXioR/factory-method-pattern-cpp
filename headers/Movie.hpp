@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Movie: public IProduct {
+class Movie : public IProduct {
 public:
     Movie(std::string movieTitle);
 };

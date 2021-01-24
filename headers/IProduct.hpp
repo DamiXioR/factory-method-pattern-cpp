@@ -4,7 +4,8 @@
 class IProduct {
 public:
     IProduct(std::string productTitle);
-    std::string getTitle() const {
+    std::string getTitle() const
+    {
         return title_;
     }
 

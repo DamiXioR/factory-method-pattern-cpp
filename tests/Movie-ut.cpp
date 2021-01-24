@@ -7,9 +7,9 @@ public:
     const std::string alienMovie = "Alien: the 8th passenger _movie";
 };
 
-TEST_F(MovieTest, ShouldCreateMovieClassObjectWithNameFollowedByPostfix){
+TEST_F(MovieTest, ShouldCreateMovieClassObjectWithNameFollowedByPostfix)
+{
     Movie* alien = new Movie(alienTitle);
     EXPECT_EQ(alien->getTitle(), alienMovie);
     delete alien;
 }
-
