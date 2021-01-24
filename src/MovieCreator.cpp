@@ -1,5 +1,5 @@
 #include "MovieCreator.hpp"
 
-IProduct* createProduct() {
-    return new Movie();
+IProduct* createProduct(std::string movieTitle) {
+    return new Movie(movieTitle);
 }

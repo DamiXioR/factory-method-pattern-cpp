@@ -2,7 +2,9 @@
 #include "IProductCreator.hpp"
 #include "Movie.hpp"
 
+#include <string>
+
 class MovieCreator: public IProductCreator {
 public:
-    IProduct* createProduct();
+    IProduct* createProduct(std::string productTitle);
 };
