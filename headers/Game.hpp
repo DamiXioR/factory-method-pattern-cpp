@@ -2,5 +2,6 @@
 #include "IProduct.hpp"
 
 class Game: public IProduct {
+public:
 
 };

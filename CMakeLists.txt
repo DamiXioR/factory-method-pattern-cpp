@@ -36,12 +36,17 @@ endif()
 #SET STATIC VALUES
 
 set(SRC
+    src/IProductCreator.cpp
+    src/MovieCreator.cpp
+    src/GameCreator.cpp
     src/IProduct.cpp
     src/Movie.cpp
     src/Game.cpp
 )
 
 set(TESTS_SRC
+    tests/MovieCreator-ut.cpp
+    tests/GameCreator-ut.cpp
     tests/Movie-ut.cpp
     tests/Game-ut.cpp
 )

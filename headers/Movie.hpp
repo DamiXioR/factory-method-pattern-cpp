@@ -2,5 +2,6 @@
 #include "IProduct.hpp"
 
 class Movie: public IProduct {
+public:
 
 };
