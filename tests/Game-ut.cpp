@@ -1,6 +1,5 @@
 #include <gtest/gtest.h>
 #include "Game.hpp"
-#include "GameCreator.hpp"
 
 class GameTest : public ::testing::Test {
 public:

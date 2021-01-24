@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "MovieCreator.hpp"
+#include "Movie.hpp"
 
 class MovieTest : public ::testing::Test {
 public:
