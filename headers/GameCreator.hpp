@@ -6,5 +6,6 @@
 
 class GameCreator : public IProductCreator {
 public:
+    ~GameCreator(){};
     IProduct* createProduct(std::string productTitle);
 };

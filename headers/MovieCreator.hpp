@@ -6,5 +6,6 @@
 
 class MovieCreator : public IProductCreator {
 public:
+    ~MovieCreator(){};
     IProduct* createProduct(std::string productTitle);
 };
