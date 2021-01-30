@@ -1,6 +1,7 @@
 #include "GameCreator.hpp"
 
-IProduct* createProduct(std::string productTitle)
+IProduct* GameCreator::createProduct(std::string productTitle)
 {
-    return new Game(productTitle);
+    IProduct* createdGame = new Game (productTitle);
+    return createdGame;
 }
