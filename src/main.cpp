@@ -11,7 +11,7 @@ int main()
     IProductCreator* productCreator = nullptr;
     IProduct* product = nullptr;
     std::string shouldCreate = "";
-    bool isNotQuit = true;
+    bool shouldFreeMemory = true;
 
     while (shouldCreate != "q") {
         std::cout << "Input: game + game title OR movie + movie title OR q for quit\n";
@@ -22,23 +22,26 @@ int main()
             shouldCreate = shouldCreate.replace(shouldCreate.find("game"), std::string("game").length(), "");
             productCreator = new GameCreator();
             product = new Game(shouldCreate);
+            shouldFreeMemory = true;
         }
         else if (!shouldCreate.find("movie")) {
             std::cout << "Movie Creator!\n";
             shouldCreate = shouldCreate.replace(shouldCreate.find("movie"), std::string("movie").length(), "");
             productCreator = new MovieCreator();
             product = new Movie(shouldCreate);
+            shouldFreeMemory = true;
         }
         else if (shouldCreate == "q") {
-            isNotQuit = false;
+            shouldFreeMemory = false;
             break;
         }
         else {
+            shouldFreeMemory = false;
             std::cout << "Don't understand!\n";
         }
 
-        std::cout << "Already created: " << product->getTitle() << "\n";
-        if (isNotQuit) {
+        if (shouldFreeMemory) {
+            std::cout << "Already created: " << product->getTitle() << "\n";
             delete productCreator;
             delete product;
         }
